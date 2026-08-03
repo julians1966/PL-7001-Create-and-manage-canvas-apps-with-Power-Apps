@@ -57,11 +57,11 @@ In this lab you will create Dataverse tables and columns.
 
 ### Task 1.3 - Add columns
 
-1. In the **Booking Request columns and data** pane, select **+** to add a new column.
+1. In the **Booking Request columns and data** section, select **+** to add a new column.
 
     ![Screenshot of data pane.](../media/data-pane.png)
 
-1. In the **New column** pane, enter or select the following values:
+1. In the **New column** pane, enter and select the following values:
 
    1. Display name: `Owner Name`
    1. Data type: **Single line of text**
@@ -71,9 +71,9 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Save**.
 
-1. In the **Booking Request columns and data** pane, select **+** to add a new column.
+1. In the **Booking Request columns and data** section, select **+** to add a new column.
 
-1. In the **New column** pane, enter or select the following values:
+1. In the **New column** pane, enter and select the following values:
 
    1. Display name: `Owner Email`
    1. Data type: **Single line of text**
@@ -82,7 +82,7 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Save**.
 
-1. In the **Booking Request columns and data** pane, select **+** and in the **New column** pane, enter or select the following values:
+1. In the **Booking Request columns and data** section, select **+** and in the **New column** pane, enter and select the following values:
 
    1. Display name: `Start Date`
    1. Data type: **Date and time**
@@ -91,7 +91,7 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Save**.
 
-1. In the **Booking Request columns and data** pane, select **+** and in the **New column** pane, enter or select the following values:
+1. In the **Booking Request columns and data** section, select **+** and in the **New column** pane, enter and select the following values:
 
    1. Display name: `End Date`
    1. Data type: **Date and time**
@@ -100,7 +100,7 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Save**.
 
-1. In the **Booking Request columns and data** pane, select **+** and in the **New column** pane, enter or select the following values:
+1. In the **Booking Request columns and data** section, select **+** and in the **New column** pane, enter and select the following values:
 
    1. Display name: `Cost`
    1. Data type: **Currency**
@@ -108,7 +108,7 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Save**.
 
-1. In the **Booking Request columns and data** pane, select **+** and in the **New column** pane, enter or select the following values:
+1. In the **Booking Request columns and data** section, select **+** and in the **New column** pane, enter and select the following values:
 
    1. Display name: `Notes`
    1. Data type: **Text** > **Multiple lines of text** > **Plain text**
@@ -119,7 +119,7 @@ In this lab you will create Dataverse tables and columns.
 
 ### Task 1.4 - Add choice column
 
-1. In the **Booking Request columns and data** pane, select **+** and in the **New column** pane, enter or select the following values:
+1. In the **Booking Request columns and data** section, select **+** and in the **New column** pane, enter and select the following values:
 
    1. Display name: `Decision`
    1. Data type: **Choice** > **Choice**
@@ -151,7 +151,7 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Booking Request**.
 
-1. In the **Booking Request columns and data** pane, select **+** and in the **New column** pane, enter or select the following values:
+1. In the **Booking Request columns and data** section, select **+** and in the **New column** pane, enter and select the following values:
 
    1. Display name: `Account`
    1. Data type: **Lookup** > **Lookup**
@@ -174,9 +174,9 @@ In this lab you will create Dataverse tables and columns.
 
 1. Select **Booking Request**.
 
-1. In the **Booking Request columns and data** pane, select the drop-down caret next to **Edit** and select **Edit in new tab**.
+1. In the **Booking Request columns and data** section, select the drop-down caret next to **Edit** and select **Edit in new tab**.
 
-1. Enter or select the following values:
+1. Enter and select the following values:
 
    1. Pet Name: `Fido`
    1. Owner Name: `MOD Administrator`
@@ -186,7 +186,7 @@ In this lab you will create Dataverse tables and columns.
    1. Cost: `1,000`
    1. Decision: **Accepted**
 
-1. Select **Insert row below** and enter or select the following values:
+1. Select **Insert row below**, then enter and select the following values:
 
    1. Pet Name: `Tom`
    1. Owner Name: `MOD Administrator`
@@ -196,7 +196,7 @@ In this lab you will create Dataverse tables and columns.
    1. Cost: `1,500`
    1. Decision: **Undecided**
 
-1. Select **Insert row below** and enter or select the following values:
+1. Select **Insert row below**, then enter and select the following values:
 
    1. Pet Name: `Jim`
    1. Owner Name: `MOD Administrator`
@@ -206,5 +206,5 @@ In this lab you will create Dataverse tables and columns.
    1. Cost: `250`
    1. Decision: **Declined**
 
-1. Close the edit data tab.
+1. Select **<- Back** to return to **Booking Requests** table page.
 
