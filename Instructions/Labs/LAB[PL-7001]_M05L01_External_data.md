@@ -37,21 +37,23 @@ In this lab you will add an external data source.
 
 ### Task 1.1 Create a SharePoint site
 
-1. In the Power Apps maker portal, `https://make.powerapps.com` select the **App launcher** in the top left of the browser window and then select **SharePoint**.
+1. In the Power Apps maker portal`https://make.powerapps.com`, select the **App launcher** in the top left of the browser window and then select **SharePoint**.
 
-1. If the **Welcome to SharePoint Start Page** popup dialog is displayed, select **✖** to close the dialog.
+1. Skip any welcome messages.
 
-1. In SharePoint, select **+ Create site**.
+1. In SharePoint, on the left navigation menu, select **Build**.
 
-1. Select **Team site**, select **Standard team** template, and then select **Use template**.
+1. Under **Start building** select **Site**.
 
-1. Enter `Pet boarding` for **Site name** and select **Next**.
+1. Select **Team site**, select the **Standard team** template, and then select **Use template**.
+
+1. Enter `Pet boarding` for **Site name**.
 
 1. Select **Create site**.
 
-1. Select **Finish**.
+1. Select **Go to site**.
 
-1. If the **Start designing your site** pop-up dialog is displayed, close the dialog.
+1. If the **Next steps** pane is displayed, close it.
 
 ### Task 1.2 Create a SharePoint list
 
@@ -65,7 +67,7 @@ In this lab you will add an external data source.
 
 1. Select **+ Add column**, select **Text**, and select **Next**.
 
-1. In the **Create a column** pane, enter or select the following values:
+1. In the **Create a column** pane, enter and select the following values:
 
    1. Name: `Pet Name`
    1. Type: **Single line of text**
@@ -74,7 +76,7 @@ In this lab you will add an external data source.
 
 1. Select **+ Add column**, select **Text**, and select **Next**.
 
-1. In the **Create a column** pane, enter or select the following values:
+1. In the **Create a column** pane, enter and select the following values:
 
    1. Name: `Owner Name`
    1. Type: **Single line of text**
@@ -83,7 +85,7 @@ In this lab you will add an external data source.
 
 1. Select **+ Add column**, select **Date and time**, and select **Next**.
 
-1. In the **Create a column** pane, enter or select the following values:
+1. In the **Create a column** pane, enter and select the following values:
 
    1. Name: `Start Date`
    1. Type: **Date and time**
@@ -92,14 +94,14 @@ In this lab you will add an external data source.
 
 1. Select **+ Add column**, select **Date and time**, and select **Next**.
 
-1. In the **Create a column** pane, enter or select the following values:
+1. In the **Create a column** pane, enter and select the following values:
 
    1. Name: `End Date`
    1. Type: **Date and time**
 
 1. Select **Save**.
 
-1. Copy the first part of the URL of the SharePoint site, for example `https://m365x99999999.sharepoint.com/sites/Petboarding/`
+1. Copy the first part of the URL of the SharePoint site, for example `https://m365x99999999.sharepoint.com/sites/Petboarding/`.
 
 ## Exercise 2 – Add SharePoint list to canvas app
 
@@ -109,9 +111,9 @@ In this lab you will add an external data source.
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **Apps** tab from the left navigation menu.
+1. Select **Apps** from the left side menu.
 
-1. Select the **Booking Request app**, select the Commands (**...**), and select **Edit > Edit in new tab**.
+1. Select the **Booking Request app**, select the Commands **(⋮)**, and select **Edit > Edit in new tab**.
 
 ### Task 2.2 - Add SharePoint as a data source
 
@@ -145,7 +147,7 @@ In this lab you will add an external data source.
 
 1. Select **Bookings** for data source.
 
-1. Select **Title and subtitle** for **Layout**.
+1. On the **Properties** pane, select **Title and subtitle** for **Layout**.
 
 1. Select **6 selected** next to **Fields**
 
@@ -178,7 +180,7 @@ In this lab you will add an external data source.
 
 1. Set the **OnSelect** property of NextArrow in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     Collect(colRequests, ThisItem)
     ```
 
@@ -188,7 +190,7 @@ In this lab you will add an external data source.
 
 1. Set the **OnStart** property in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     Clear(colRequests)
     ```
 
@@ -206,7 +208,7 @@ In this lab you will add an external data source.
 
 1. In the app authoring menu, select **Insert (+)**.
 
-1. Expand **Classic icons**.
+1. Expand **Icons**.
 
 1. Select **Blocked**. The icon will be added to each row in the gallery.
 
@@ -225,7 +227,7 @@ In this lab you will add an external data source.
 
 1. Set the **OnSelect** property of **DeclineIcon** in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     Patch('Booking Requests', ThisItem, {Decision: 'Decision (Booking Requests)'.Declined})
     ```
 
@@ -239,7 +241,7 @@ In this lab you will add an external data source.
 
 1. In the app authoring menu, select **Insert (+)**.
 
-1. Expand **Classic icons**.
+1. Expand **Icons**.
 
 1. Select **Add**. The icon will be added to each row in the gallery.
 
@@ -258,7 +260,7 @@ In this lab you will add an external data source.
 
 1. Set the **OnSelect** property of **AcceptIcon** in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     Patch(Bookings,Defaults(Bookings),{Title:"New Booking",'Pet Name':ThisItem.'Pet Name','Owner Name':ThisItem.'Owner Name', 'Start Date':ThisItem.'Start Date','End Date':ThisItem.'End Date'})
     ```
 
@@ -290,18 +292,19 @@ In this lab you will add an external data source.
 
 1. Set the **Text** property of **UserDetailsLabel** in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     Office365Users.MyProfile().Country
     ```
 > [!NOTE]
-> If the user's country doesn't display, navigate to `https://admin.microsoft.com`, select **Users** > **Active users**, select the user profile, select **Manage contact information**, set the **Country or region** field to any country, and then select **Save changes**.
+> If the user's country doesn't display, navigate to `https://admin.microsoft.com`, select **Users** > **Active users**, select the user profile, select **Manage contact information**, set the **Country or region** field to **United States**, and then select **Save changes**.
 
-1. Set the properties of the label in the formula bar as follows:
+8. Set the properties of the label in the formula bar as follows:
 
    1. X=`930`
    1. Y=`20`
    1. Size=`18`
    1. Color=`Color.White`
+   1. Width=`160`
 
 1. Select **Save** in the top-right of the Power Apps Studio.
 
