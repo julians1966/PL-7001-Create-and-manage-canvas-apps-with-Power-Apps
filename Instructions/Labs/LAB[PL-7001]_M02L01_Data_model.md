@@ -166,7 +166,7 @@ In this lab you will create Dataverse tables and columns.
 
 ### Task 3.1 - Add booking request records
 
-1. Navigate to the Power Apps Maker portal <https://make.powerapps.com>.
+1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
 
 1. Make sure you are in the **Dev One** environment.
 

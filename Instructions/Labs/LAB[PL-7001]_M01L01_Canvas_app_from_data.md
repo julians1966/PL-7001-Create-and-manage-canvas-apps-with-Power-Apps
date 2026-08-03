@@ -59,7 +59,7 @@ In this lab you will design and build a canvas app from an existing data source.
 
 ### Task 2.1 - Create the app
 
-1. Navigate to the Power Apps Maker portal <https://make.powerapps.com>.
+1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
 
 1. Make sure you are in the **Dev One** environment.
 

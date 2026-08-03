@@ -38,11 +38,11 @@ In this lab you will design and build a canvas app from blank, add a data source
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **+ Create** tab from the left navigation menu.
+1. Select **+ Create** from the left navigation pane.
 
 1. Select the **Create from blank** tile under **Start from design**.
 
-1. Select **Tablet size**.
+1. Select **Tablet** size.
 
 1. Wait for the blank app to be built.
 
@@ -64,7 +64,7 @@ In this lab you will design and build a canvas app from blank, add a data source
 
 1. In the app authoring menu, select **Tree view**.
 
-1. Select **Screen1** in the tree view and select the ellipsis (**...**) and select **Rename**.
+1. Select **Screen1** in the tree view, select the ellipsis (**...**), and then select **Rename**.
 
 1. Enter `MainScreen`.
 
@@ -122,16 +122,16 @@ In this lab you will design and build a canvas app from blank, add a data source
 
     ![Screenshot of gallery properties.](../media/gallery-properties.png)
 
-1. In the **Properties** tab, for **Layout** select **Title, subtitle, and body**.
+1. In the **Properties** pane, for **Layout** select **Title, subtitle, and body**.
 
 1. Select **7 selected** next to **Fields**.
 
 1. Select **Cost** for **Body1**.
 
-   > [!NOTE]
-   > The field names may appear as schema names with a prefix instead of the display name.
+> [!NOTE]
+> The field names may appear as schema names with a prefix instead of the display name.
 
-1. Select **Decision** for **Subtitle2**.
+7. Select **Decision** for **Subtitle2**.
 
 1. Select **Pet Name** for **Title2**.
 
@@ -164,7 +164,7 @@ In this lab you will design and build a canvas app from blank, add a data source
 
 1. Set the **Text** property in the formula bar to the formula:
 
-    ```powerappsfl
+    ```powerfx
     Text(Value(ThisItem.Cost), "$#,##0.00")
     ```
 
