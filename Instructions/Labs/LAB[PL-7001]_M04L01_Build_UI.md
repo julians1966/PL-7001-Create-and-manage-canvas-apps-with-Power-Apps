@@ -32,21 +32,21 @@ In this lab you will change the colors of the controls in the app.
 
 ### Task 1.1 - Edit the app
 
-1. Navigate to the Power Apps Maker portal <https://make.powerapps.com>.
+1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **Apps** tab from the left-side menu.
+1. Select **Apps** from the left-side menu.
 
 1. Select the **Booking Request app**, select the Commands (**...**), and select **Edit > Edit in new tab**.
 
 ### Task 1.2 - Select a theme
 
-1. In Power Apps Studio, select the **More** icon (**...**) at the bottom of the left navigation bar, and then select **Themes**.
+1. In Power Apps Studio, select **Theme** from the command bar.
 
     ![Screenshot of select themes.](../media/select-theme.png)
 
-1. Select the **Red** theme.
+1. Select the **Red** standard theme.
 
 ### Task 1.3 - Brand controls
 
@@ -58,7 +58,7 @@ In this lab you will change the colors of the controls in the app.
 
 1. Set the **Color** property of NextArrow in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     RGBA(164, 38, 44, 1)
     ```
 
@@ -66,7 +66,7 @@ In this lab you will change the colors of the controls in the app.
 
 1. Set the **Color** property of Body in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     If(ThisItem.Cost > 1000, RGBA(164, 38, 44, 1), Color.Black)
     ```
 
