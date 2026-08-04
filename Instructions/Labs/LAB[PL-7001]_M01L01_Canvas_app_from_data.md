@@ -35,7 +35,7 @@ In this lab you will design and build a canvas app from an existing data source.
 
 1. In a web browser, navigate to [CoffeeMachineData.xlsx](https://github.com/MicrosoftLearning/PL-7001-Create-and-manage-canvas-apps-with-Power-Apps/blob/master/Allfiles/Labs/CoffeeMachineData.xlsx) at `https://github.com/MicrosoftLearning/PL-7001-Create-and-manage-canvas-apps-with-Power-Apps/blob/master/Allfiles/Labs/CoffeeMachineData.xlsx`.
 
-1. Select the **Download** file button to download the Excel workbook.
+1. Select the **Download raw file** button to download the Excel workbook.
 
     ![Screenshot of Raw download icon in GitHub.](../media/raw-download.png)
 
@@ -45,13 +45,13 @@ In this lab you will design and build a canvas app from an existing data source.
 
     ![Screenshot of OneDrive icon.](../media/select-onedrive.png)
 
-1. If presented with a pop-up, select **Your OneDrive is ready**.
+1. If prompted, select **Your OneDrive is ready**.
 
 1. Select **+ Create or upload** and then select **Files upload**
 
     ![Screenshot of OneDrive file upload.](../media/select-onedrive-upload.png)
 
-1. Browse to the **Downloads** folder and select the **CoffeeMachineData.xlsx** file and select **Open**.
+1. Browse to the **Downloads** folder, select the **CoffeeMachineData.xlsx** file, and then select **Open**.
 
 1. Select **My files** and verify that CoffeeMachineData.xlsx has been uploaded.
 
@@ -59,11 +59,11 @@ In this lab you will design and build a canvas app from an existing data source.
 
 ### Task 2.1 - Create the app
 
-1. Navigate to the Power Apps Maker portal <https://make.powerapps.com>.
+1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **+ Create** tab from the left-side menu.
+1. Select **+ Create** from the left navigation pane.
 
 1. Select the **Excel Online (Business)** tile under **Start from data**.
 
@@ -112,7 +112,7 @@ In this lab you will design and build a canvas app from an existing data source.
 
 1. Select the **Tick** icon at the top right of the app.
 
-1. Select **X** in the upper right corner to stop the preview.
+1. Select **Edit** in the upper right corner to close the preview mode.
 
 1. If the **Did you know?** pop-up dialog is displayed, select **Don't show me this again** and select **Ok**.
 
@@ -126,13 +126,11 @@ In this lab you will design and build a canvas app from an existing data source.
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **Apps** tab from the left-side menu.
+1. Select **Apps** from the left navigation pane.
 
-1. Select the **+New app** dropdown, and then **Start with Copilot**.
+1. Select the **+ New app** dropdown, and then **Start with Copilot**.
 
-1. Select the **Start with Copilot** tile under **Create your apps**.
-
-1. Under **Get started with Copilot** enter `Assign coffee repairs to technicians per customer request`.
+1. Under **Get started with Copilot** dialog, enter the following: `Assign coffee repairs to technicians per customer request`.
 
     ![Screenshot of copilot prompt.](../media/copilot-prompt.png)
 
@@ -142,12 +140,12 @@ In this lab you will design and build a canvas app from an existing data source.
 
 1. Select **Generate**.
 
-    Copilot will begin to build a table structure to support your application.
+   Copilot will begin to build a table structure to support your application.
 
-    > **IMPORTANT:**
-    > When using generative AI, you will not always get the same exact results. It is possible that your table will not exactly match the table created for another student.
+> [!IMPORTANT]
+> When using generative AI, you will not always get the same exact results. It is possible that your table will not exactly match the table created for another student.
 
-1. Select the **Commands (...)** next to the table and select **View data**.
+8. Select the **Commands (...)** next to the table and select **View data**.
 
     ![Screenshot of copilot table.](../media/copilot-table-view-data.png)
 
@@ -159,7 +157,7 @@ In this lab you will design and build a canvas app from an existing data source.
 
 1. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button.
 
-1. Wait for the app to be built.
+1. Wait for the app to finish building.
 
     ![Screenshot of app by by copilot.](../media/copilot-app.png)
 
@@ -167,4 +165,4 @@ In this lab you will design and build a canvas app from an existing data source.
 
 1. Select the **<- Back** button from the top left of the command bar, and select **Leave** to exit the app.
 
-1. Select the **Apps** tab from the left-side menu of the Power Apps maker portal.
+1. Select **Apps** from the left navigation pane of the Power Apps maker portal. The **Coffee Machine Repairs App** should be listed.

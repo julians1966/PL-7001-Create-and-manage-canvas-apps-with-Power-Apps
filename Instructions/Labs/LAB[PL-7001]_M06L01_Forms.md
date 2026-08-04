@@ -45,9 +45,9 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **Apps** tab from the left navigation menu.
+1. Select **Apps** from the left navigation menu.
 
-1. Select the **Booking Request app**, select the Commands (**...**), and select **Edit > Edit in new tab**.
+1. Select the **Booking Request app**, select the Commands **(⋮)**, and select **Edit > Edit in new tab**.
 
 ### Task 1.2 - Add screens
 
@@ -75,7 +75,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **OnSelect** property of NextArrow in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     Collect(colRequests, ThisItem);Navigate(DetailScreen, ScreenTransition.Cover);
     ```
 
@@ -83,25 +83,25 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. In the app authoring menu, select **Insert (+)**.
 
-1. Expand **Classic icons**.
+1. Expand **Icons**.
 
 1. Select **Back arrow**.
 
 1. Set the **OnSelect** property of the icon to:
 
-    ```powerappsfl
+    ```powerfx
     Back()
     ```
 
 1. Rename the icon to `BackIconEdit`.
 
-1. In the **Tree view**, select the icon and select the Commands (**...**) and select **Copy**.
+1. In the **Tree view**, select the icon, select the Commands (**...**), and then select **Copy**.
 
 1. Expand **DetailScreen**.
 
 1. Expand **ScreenContainer1**.
 
-1. Select **HeaderContainer1** and select the Commands (**...**) and select **Paste**.
+1. Select **HeaderContainer1**, select the Commands (**...**), and then select **Paste**.
 
 1. Rename the icon to `BackIconDetail`.
 
@@ -119,15 +119,15 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. In the app authoring menu, select **Insert (+)**.
 
-1. Expand **Classic**.
+1. Expand **Input**.
 
 1. Select  **Display form**.
 
     ![Screenshot of adding a display form.](../media/add-display-form.png)
 
-1. In the FormViewer's properties, select **Booking Requests** for **Data source**.
+1. In the **Properties** pane, select **Booking Requests** for **Data source**.
 
-1. In the **Properties** pane, select the link shown next to **Fields** (e.g., **8 selected**).
+1. Select the link shown next to **Fields** (e.g., **8 selected**).
 
     ![Screenshot of default form fields.](../media/add-fields-default.png)
 
@@ -147,7 +147,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **Item** property of the form viewer control in the formula bar to:
 
-    ```powerappsfl
+    ```powerfx
     BookingRequestList.Selected
     ```
 
@@ -169,7 +169,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **Text** property of the label to:
 
-    ```powerappsfl
+    ```powerfx
     BookingRequestList.Selected.'Pet Name'
     ```
 
@@ -193,13 +193,13 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **Text** property of the button to:
 
-    ```powerappsfl
+    ```powerfx
     "Delete"
     ```
 
 1. Set the **OnSelect** property of the button to:
 
-    ```powerappsfl
+    ```powerfx
     Remove('Booking Requests', BookingRequestList.Selected); Back();
     ```
 
@@ -215,9 +215,9 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Select  **Edit form**.
 
-1. In the Form's properties, select **Booking Requests** for **Data source**.
+1. In the **Properties** pane, select **Booking Requests** for **Data source**.
 
-1. In the **Properties** pane, select the link shown next to **Fields** (e.g., **9 selected**).
+1. Select the link shown next to **Fields** (e.g., **9 selected**).
 
 1. Add or remove the fields so that they are arranged in following order :
 
@@ -232,7 +232,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **Item** property of the form control to:
 
-    ```powerappsfl
+    ```powerfx
     BookingRequestList.Selected
     ```
 
@@ -269,13 +269,13 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **Text** property of the button to:
 
-    ```powerappsfl
+    ```powerfx
     "Submit"
     ```
 
 1. Set the **OnSelect** property of the button to:
 
-    ```powerappsfl
+    ```powerfx
     SubmitForm(BookingRequestForm)
     ```
 
@@ -283,13 +283,13 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **OnSuccess** property of the form to:
 
-    ```powerappsfl
+    ```powerfx
     Navigate(MainScreen, ScreenTransition.UnCover)
     ```
 
 ### Task 3.3 - Add navigation to the edit screen
 
-1. In the app authoring menu, select **Tree view**.
+1. In the app authoring menu, select **Tree view**, if it is not already selected.
 
 1. Expand **DetailScreen**.
 
@@ -299,7 +299,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. In the app authoring menu, select **Insert (+)**.
 
-1. Expand **Classic icons**.
+1. Expand **Icons**.
 
 1. Select **Edit**.
 
@@ -309,19 +309,19 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **OnSelect** property of the icon to:
 
-    ```powerappsfl
+    ```powerfx
     Navigate(EditScreen, ScreenTransition.Cover)
     ```
 
 ### Task 3.4 - New record
 
-1. In the app authoring menu, select **Tree view**.
+1. In the app authoring menu, select **Tree view**, if it is not already selected.
 
 1. Select **MainScreen**.
 
 1. In the app authoring menu, select **Insert (+)**.
 
-1. Expand **Classic icons**.
+1. Expand **Icons**.
 
 1. Select **Add**.
 
@@ -339,7 +339,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **OnSelect** property of the icon to:
 
-    ```powerappsfl
+    ```powerfx
     NewForm(BookingRequestForm);Navigate(EditScreen, ScreenTransition.Cover)
     ```
 
