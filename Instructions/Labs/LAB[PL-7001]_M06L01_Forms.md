@@ -339,7 +339,7 @@ In this lab you will use forms to create and edit records in a data source.
 
 1. Set the **OnSelect** property of the icon to:
 
-    ```powerappsfl
+    ```powerfx
     NewForm(BookingRequestForm);Navigate(EditScreen, ScreenTransition.Cover)
     ```
 
