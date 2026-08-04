@@ -40,7 +40,7 @@ In this lab you will manage your canvas app.
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **Apps** tab from the left navigation menu.
+1. Select **Apps** from the left navigation menu.
 
 1. Select the **Booking Request app**, select the Commands (**...**), and select **Share**.
 
@@ -56,7 +56,7 @@ In this lab you will manage your canvas app.
 
 ### Task 1.2 - Publish the Booking Request app
 
-1. Select the **Booking Request app**, select the Commands (**...**), and select **Details**.
+1. Select the **Booking Request app**, select the Commands **(⋮)**, and select **Details**.
 
 1. Select the **Versions** tab.
 
@@ -76,9 +76,9 @@ In this lab you will manage your canvas app.
 
 1. Make sure you are in the **Dev One** environment.
 
-1. Select the **Apps** tab from the left navigation menu.
+1. Select **Apps** from the left navigation menu.
 
-1. Select the **Booking Request app**, select the Commands (**...**), and select **Export package**.
+1. Select the **Booking Request app**, select the Commands **(⋮)**, and select **Export package**.
 
 1. Enter `Booking Request app` for **Name**.
 
@@ -94,9 +94,9 @@ In this lab you will manage your canvas app.
 
 ### Task 2.2 - Save the app locally
 
-1. Select the **Apps** tab from the left navigation menu.
+1. Select **Apps** from the left navigation menu.
 
-1. Select the **Booking Request app**, select the Commands (**...**), and select **Edit > Edit in new tab**.
+1. Select the **Booking Request app**, select the Commands **(⋮)**, and select **Edit > Edit in new tab**.
 
 1. Select the drop-down caret next to **Save** in the top-right of the Power Apps Studio.
 
